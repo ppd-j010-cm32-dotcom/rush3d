@@ -1,0 +1,6 @@
+{
+  "name": "Misi Baca Rush 3D",
+  "description": "Permainan interaktif 3D intervensi membaca Bahasa Melayu untuk murid pemulihan khas sekolah rendah: Pandu, Baca, Pilih, Kuasai.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

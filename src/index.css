@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Safe area padding utilities for mobile notch/home indicators */
+  .pt-safe {
+    padding-top: max(env(safe-area-inset-top), 0.5rem);
+  }
+  .pb-safe {
+    padding-bottom: max(env(safe-area-inset-bottom), 0.5rem);
+  }
+  .pl-safe {
+    padding-left: max(env(safe-area-inset-left), 0.5rem);
+  }
+  .pr-safe {
+    padding-right: max(env(safe-area-inset-right), 0.5rem);
+  }
+
+  /* Prevent double tap zoom on interactive buttons */
+  button, input, select, a {
+    touch-action: manipulation;
+  }
+
+  /* Hide scrollbars for clean UI while keeping scrollability */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
